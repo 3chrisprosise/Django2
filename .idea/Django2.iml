@@ -19,7 +19,8 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../Django2\templates" />
+        <option value="$MODULE_DIR$/Basic/templates" />
+        <option value="$MODULE_DIR$/BootStrap/templates" />
       </list>
     </option>
   </component>

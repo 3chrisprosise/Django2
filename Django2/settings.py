@@ -125,6 +125,7 @@ STATIC_URL = '/static/'
 
 STATIC_DIRS = [
     os.path.join(BASE_DIR, "Basic/static"),
+    os.path.join(BASE_DIR, "BootStrap/static"),
 ]
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__)).replace('\\', '/')
