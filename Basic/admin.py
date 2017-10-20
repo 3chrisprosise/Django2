@@ -53,3 +53,5 @@ admin.site.register(models.Question, QuestionAdmin)
 #     inlines = [ChoiceInline]
 #
 # admin.site.register(models.Question, QuestionAdmin)
+
+admin.site.register(models.Person)

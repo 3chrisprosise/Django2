@@ -4,6 +4,8 @@ from django.template import loader
 from django.urls import reverse
 
 from django.views import generic
+
+from django.views.generic import ListView
 # Create your views here.
 
 def detail(req, question_id):
@@ -77,3 +79,57 @@ class ResultsView(generic.DetailView):
 
 def homework(req):
     return render(req, 'HomeWork.html')
+
+
+
+def md5_test(req):
+    return render(req, 'TestMd5.html')
+
+def aggregate(req):
+    from django.db.models import Avg
+    from django.db.models import Max, Min
+    from django.db.models import Count
+    from django.db.models import Sum
+    from django.db.models import Q, F
+    from django.db.models import FloatField
+    # 第一种方法是从整个查询集生成统计值
+    models.Book.objects.all().aggregate(Avg('price'))  # 这里的 all() 可以省略
+    models.Book.objects.aggregate(Max('price'))  # 省略后
+    models.Book.objects.all().aggregate(price_per_page=Sum(F('price') / F('pages'), output_field=FloatField()))
+    models.Store.objects.annotate(min_price=Min('books__price'), max_price=Max('books__price'))
+    # annotate 为表连接  aggregate 为嵌套查询
+    # 使用纯sql语句查询
+    persons = models.Person.objects.raw('SELECT * FROM myapp_person')
+    # 传递给row的sql语句并不会被检查
+    lname = 'Doe'
+    models.Person.objects.raw('SELECT * FROM myapp_person WHERE last_name = %s', [lname])
+    # 这里的参数传递要改成字符串获取参数的形式
+
+
+# 游标的定义
+def my_cursor(self):
+    from django.db import connection
+    cursor = connection.cursor()
+    cursor.execute("UPDATE bar SET foo = 1 WHERE baz = %s", [self.baz])
+    cursor.execute("SELECT foo FROM bar WHERE baz = %s", [self.baz])
+    row = cursor.fetchone()
+
+    # 查询中包含百分号字符 % ，你需要写成两个百分号字符
+
+    # 关于Django 数据库 事物保存点的问题 ，依旧有待商议
+
+    # 使用 QuerySet.exists() 来判断是否存在， 直接使用外键值 entry.blog_id
+
+    '''
+    
+    一次性创建多个
+    Entry.objects.bulk_create([
+    Entry(headline="Python 3.0 Released"),
+    Entry(headline="Python 3.1 Planned")
+    ])
+    
+    '''
+
+class PublisherList(ListView):  # listView  仅用于展示 model
+
+    models = models.Publisher

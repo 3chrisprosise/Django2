@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Md5</title>
+</head>
+<body>
+{% load static %}
+<script src="{% static '/js/md5.min.js' %}"></script>
+
+<script>
+    var hash = md5("value");
+    alert(hash);
+</script>
+
+</body>
+</html>
