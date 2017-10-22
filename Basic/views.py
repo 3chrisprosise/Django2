@@ -78,7 +78,7 @@ class ResultsView(generic.DetailView):
     template_name = 'result.html'
 
 def homework(req):
-    return render(req, 'HomeWork.html')
+    return render(req, 'homework2.html')
 
 
 
