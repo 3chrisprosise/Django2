@@ -24,7 +24,7 @@
                 <td>班级：</td>
                 <td><input class="form-control" type="text" value="1班"></td>
                 <td>学号：</td>
-                <td><input class="form-control" type="text" value="001"></td>
+                <td><input class="form-control" type="text"  placeholder="1234"></td>
                 <td>姓名：</td>
                 <td><input class="form-control" type="text" value="张三"></td>
             </tr>
@@ -40,7 +40,7 @@
                         <p>1、UML的中文全称是：</p>
                     </div>
                     <div class="col-md-1">
-                        <input class="form-control" type="text" value="统一建模语言">
+                        <input class="form-control" type="text" value="统一建模语言" id="one_1">
                     </div>
                 </div>
             </li>
@@ -50,13 +50,13 @@
                         <p>2、对象最突出的特征是：</p>
                     </div>
                     <div class="col-md-1">
-                        <input class="form-control" type="text" value="封装性">
+                        <input class="form-control" type="text" value="封装性" id="one_2">
                     </div>
                     <div class="col-md-1">
-                        <input class="form-control" type="text" value="继承性">
+                        <input class="form-control" type="text" value="继承性" id="one_3">
                     </div>
                     <div class="col-md-1">
-                        <input class="form-control" type="text" value="多态性">
+                        <input class="form-control" type="text" value="多态性" id="one_4">
                     </div>
                 </div>
             </li>
@@ -67,32 +67,32 @@
             <li>UML与软件工程的关系是：
                 <ul class="list-unstyled" style="width: 700px">
                     <li>
-                        <lable><input class="radio" name="chebox1" type="radio">(A)UML就是软件工程</lable>
+                        <lable><input class="radio" name="two_1" type="radio" value="A" >(A)UML就是软件工程</lable>
                     </li>
                     <li>
-                        <label><input class="radio" name="chebox1" type="radio" checked="checked"><span>(B)UML参与到软件工程中软件开发过程的几个阶段</span></label>
+                        <label><input class="radio" name="two_1" type="radio" checked="checked" value="B"><span>(B)UML参与到软件工程中软件开发过程的几个阶段</span></label>
                     </li>
                     <li>
-                        <label><input class="radio" name="chebox1" type="radio"><span>(C)UML与软件工程无关</span></label>
+                        <label><input class="radio" name="two_1" type="radio" value="C"><span>(C)UML与软件工程无关</span></label>
                     </li>
                     <li>
-                        <label><input class="radio" name="chebox1" type="radio"><span>(D)UML是软件工程的一部分</span></label>
+                        <label><input class="radio" name="two_1" type="radio" value="D"><span>(D)UML是软件工程的一部分</span></label>
                     </li>
                 </ul>
             </li>
             <li>Java语言支持：
                 <ul class="list-unstyled">
                     <li>
-                        <label><input name="chebox2" type="radio" checked="checked"><span>(A)单继承</span></label>
+                        <label><input name="two_2" type="radio" checked="checked" value="A"><span>(A)单继承</span></label>
                     </li>
                     <li>
-                        <label><input name="chebox2" type="radio"><span>(B)多继承</span></label>
+                        <label><input name="two_2" type="radio" value="B"><span>(B)多继承</span></label>
                     </li>
                     <li>
-                        <label><input name="chebox2" type="radio"><span>(C)单继承和多继承都支持</span></label>
+                        <label><input name="tow_2" type="radio" value="C"><span>(C)单继承和多继承都支持</span></label>
                     </li>
                     <li>
-                        <label><input name="chebox2" type="radio"><span>(D)单继承和多继承都不支持</span></label>
+                        <label><input name="two_2" type="radio" value="D"><span>(D)单继承和多继承都不支持</span></label>
                     </li>
                 </ul>
             </li>
@@ -105,32 +105,32 @@
             <li>用例的粒度分为以下哪三种：
                 <ul class="list-unstyled">
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox1" checked="checked"><span>(A)概述级</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_1" checked="checked" value="A"><span>(A)概述级</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox1" checked="checked"><span>(B)需求及级</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_1" checked="checked" value="B"><span>(B)需求及级</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox1"><span>(C)用户目标级</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_1" value="C"><span>(C)用户目标级</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox1" checked="checked"><span>(D)子功能级</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_1" checked="checked" value="D"><span>(D)子功能级</span></label>
                     </li>
                 </ul>
             </li>
             <li>类图由以下哪三部分组成：
                 <ul class="list-unstyled">
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox2" checked="checked"><span>(A)名称(Name)</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_2" checked="checked" value="A"><span>(A)名称(Name)</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox2" checked="checked"><span>(B)属性(Attribute)</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_2" checked="checked" value="B"><span>(B)属性(Attribute)</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox2" checked="checked"><span>(C)操作(Operation)</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_2" checked="checked" value="C"><span>(C)操作(Operation)</span></label>
                     </li>
                     <li>
-                        <label><input class="checkbox" type="checkbox" name="chebox2"><span>(D)方法(Function)</span></label>
+                        <label><input class="checkbox" type="checkbox" name="three_2" value="D"><span>(D)方法(Function)</span></label>
                     </li>
                 </ul>
             </li>
@@ -141,12 +141,12 @@
         <h1>四、判断题（每题10分，共20分）</h1>
         <ol>
             <li>用例图只是用于客户交流和沟通的，用于确定需求。
-                <label><input type="radio" name="T3"><span>√</span></label>
-                <label><input type="radio" name="T3" checked="checked"><span>×</span></label>
+                <label><input type="radio" name="four_1" value="true"><span>√</span></label>
+                <label><input type="radio" name="four_1" checked="checked" value="false"><span>×</span></label>
             </li>
             <li>在状态图中终止状态在一个状态图中允许有任意多个。
-                <label><input type="radio" name="T3" checked="checked"><span>√</span></label>
-                <label><input type="radio" name="T3"><span>×</span></label>
+                <label><input type="radio" name="four_2" checked="checked" value="true"><span>√</span></label>
+                <label><input type="radio" name="four_2" value="false"><span>×</span></label>
             </li>
         </ol>
 
@@ -157,8 +157,7 @@
                     <li>
                         <div class="row">
                             <div class="col-md-4">
-                                <textarea class="form-control" rows="10">
-    模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。
+                                <textarea class="form-control" rows="10" id="five">
                                 </textarea>
                             </div>
                         </div>
@@ -166,7 +165,191 @@
                 </ul>
             </li>
         </ol>
-        <button class="btn btn-default">计算分数</button>
+        <button class="btn btn-default" id="get_Score">计算分数</button>
     </div>
+<script src="/static/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" >
+
+    var right_answer = {
+        five:"模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式",
+        four:[false,true],
+        three:["ABD", "ABC"],
+        two:["B","A"],
+        one:["统一建模语言", "封装性", "继承性", "多态性"]
+    };
+
+    var score_per_question = {
+        one:5,
+        two:10,
+        three:10,
+        four:10,
+        five:20
+    };
+
+    var get_answer = function () {
+        answer = {
+            one:null,
+            two:null,
+            three:null,
+            four:null,
+            five:null
+        };
+
+        answer.one = [
+            document.getElementById("one_1").value,
+            document.getElementById("one_2").value,
+            document.getElementById("one_3").value,
+            document.getElementById("one_4").value
+        ];
+
+        answer.two = [
+            function () {
+                var two_1s = document.getElementsByName("two_1");
+                for(var index=0;index<two_1s.length;index ++){
+                    if(two_1s[index].checked){
+                        return two_1s[index].value;
+                    }
+                }
+            }()
+            ,
+            function () {
+                var two_2s = document.getElementsByName("two_2");
+                for(var index=0;index<two_2s.length;index ++){
+                    if(two_2s[index].checked){
+                        return two_2s[index].value;
+                    }
+                }
+            }()
+        ];
+
+        answer.three = [
+            function () {
+                var three_1s = document.getElementsByName("three_1");
+                var result = "";
+                for(var index=0;index<three_1s.length;index ++){
+                    if(three_1s[index].checked){
+                        result += three_1s[index].value;
+                    }
+                }
+                return result;
+            }()
+            ,
+            function () {
+                var three_2s = document.getElementsByName("three_2");
+                var result = "";
+                for(var index=0;index<three_2s.length;index ++){
+                    if(three_2s[index].checked){
+                        result += three_2s[index].value;
+                    }
+                }
+                return result;
+            }()
+        ];
+
+        answer.four = [
+            function () {
+                var four_1 = document.getElementsByName("four_1");
+                for(var index=0;index<four_1.length;index++){
+                    if(four_1[index].checked){
+                        if(four_1[index].value === "false"){
+                            return false;
+                        }else return true;
+                    }
+                }
+            }()
+            ,
+            function () {
+                var four_2 = document.getElementsByName("four_2");
+                for(var index=0;index<four_2.length;index++){
+                    if(four_2[index].checked){
+                        if(four_2[index].value === "false"){
+                            return false;
+                        }else return true;
+                    }
+                }
+            }()
+        ];
+
+        answer.five = document.getElementById("five").textContent;
+
+        return answer;
+    };
+
+
+    var answer = get_answer();
+
+    var get_result = function () {
+        var answer = get_answer();
+        var Score = 0;
+        var Wrong_Question = {
+            one:[],
+            two:[],
+            three:[],
+            four:[],
+            five:[]
+        };
+
+        for(var index=0;index<right_answer.one.length; index ++){
+            if(right_answer.one[index] === answer.one[index]){
+                Score += 5;
+                Wrong_Question.one.push("T");
+            }else {
+                Wrong_Question.one.push("F");
+            }
+        }
+
+        for(var index=0;index<right_answer.two.length; index ++){
+            if(right_answer.two[index] === answer.two[index]){
+                Score += 10;
+                Wrong_Question.two.push("T");
+            }else {
+                Wrong_Question.two.push("F");
+            }
+        }
+
+        for(var index=0;index<right_answer.three.length; index ++){
+            if(right_answer.three[index] === answer.three[index]){
+                Score += 10;
+                Wrong_Question.three.push("T");
+            }else {
+                Wrong_Question.three.push("F");
+            }
+        }
+
+        for(var index=0;index<right_answer.four.length; index ++){
+            if(right_answer.four[index] === answer.four[index]){
+                Score += 10;
+                Wrong_Question.four.push("T");
+            }else {
+                Wrong_Question.four.push('F');
+            }
+        }
+        
+        if(right_answer.five === answer.five){
+            Score += 20;
+            Wrong_Question.five.push("T");
+        }else {
+            Wrong_Question.five.push("F");
+        }
+
+        return {
+            score: Score,
+            result:Wrong_Question
+        }
+    };
+
+    document.getElementById("get_Score").onclick = function () {
+        var result = get_result();
+        alert(
+            "分数为：" + result.score + "\n" +
+            "错误记录\n" +
+                result.result.one + "\n" +
+                result.result.two + "\n" +
+                result.result.three + "\n" +
+                result.result.four + "\n" +
+                result.result.five + "\n"
+        )
+    }
+</script>
 </body>
 </html>
